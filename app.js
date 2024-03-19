@@ -18,6 +18,8 @@ app.use(
     origin: [
       "https://svuhospital.netlify.app",
       "https://svuhospitaladmin.netlify.app",
+      "https://localhost:5173",
+      "https://localhost:5174",
     ],
     credentials: true, // Allow credentials
   })
