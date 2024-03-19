@@ -6,8 +6,7 @@ node_modules/
 logs/
 *.log
 
-# Dependency directories
-/database/
+
 
 # OS generated files
 .DS_Store
