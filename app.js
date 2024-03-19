@@ -15,7 +15,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: [
+      "https://svuhospital.netlify.app",
+      "https://svuhospitaladmin.netlify.app",
+    ],
     credentials: true, // Allow credentials
   })
 );
