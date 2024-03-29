@@ -12,8 +12,12 @@ import appointmentRouter from "./router/appointmentRouter.js";
 import dotEnv from "dotenv";
 dotEnv.config();
 const app = express();
-
-app.use(cors({ origin: "*" }));
+app.use(
+  cors({
+    origin: true, // This will reflect the request origin
+    credentials: true, // Allow credentials
+  })
+);
 
 app.use(cookieParser());
 app.use(express.json());
