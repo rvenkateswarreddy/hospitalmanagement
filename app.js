@@ -13,17 +13,7 @@ import dotEnv from "dotenv";
 dotEnv.config();
 const app = express();
 
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "http://localhost:5174",
-      "https://svuhospital.netlify.app",
-      "https://svuhospitaladmin.netlify.app",
-    ],
-    credentials: true, // Allow credentials
-  })
-);
+app.use(cors({ origin: "*" }));
 
 app.use(cookieParser());
 app.use(express.json());
